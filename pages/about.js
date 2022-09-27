@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Container, DomHead, Footer, NavBar } from "../components";
 import { FaArrowLeft } from "react-icons/fa";
-import { ResponsiveNavbar } from "../components/Navbar";
+// import { ResponsiveNavbar } from "../components/Navbar";
 
 import usersInfo from "../data/usersInfo";
 
@@ -87,7 +87,7 @@ function About() {
       </div>
       <br />
       <Footer />
-      {windowWidth <= 700 && <ResponsiveNavbar pageName={"projects"} />}
+      {/* {windowWidth <= 700 && <ResponsiveNavbar pageName={"projects"} />} */}
     </div>
   );
 }

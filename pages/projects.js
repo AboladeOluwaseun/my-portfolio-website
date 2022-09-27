@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Container, DomHead, Footer, NavBar } from "../components";
 import { FaArrowLeft } from "react-icons/fa";
-import { ResponsiveNavbar } from "../components/Navbar";
+// import { ResponsiveNavbar } from "../components/Navbar";
 import { FaStar, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -72,7 +72,7 @@ function Projects() {
         </Container>
       </div>
       <Footer />
-      {windowWidth <= 700 && <ResponsiveNavbar pageName={"projects"} />}
+      {/* {windowWidth <= 700 && <ResponsiveNavbar pageName={"projects"} />} */}
     </div>
   );
 }
