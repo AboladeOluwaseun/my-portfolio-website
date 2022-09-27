@@ -1,5 +1,5 @@
 import Head from "next/head";
-import userInfo from "../../data/usersInfo.json";
+import usersInfo from "../../data/usersInfo";
 
 export default function DomHead({ pageName = "Home Page" }) {
   return (

@@ -3,7 +3,7 @@ import { Container } from "..";
 import Heading from "../Heading";
 import SubHeading from "../SubHeading";
 import { FaStar, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import userInfo from "../../data/usersInfo.json";
+import usersInfo from "../../data/usersInfo";
 
 function Quote() {
   return (
@@ -35,8 +35,8 @@ function QuoteCard() {
       <div className=" flex flex-row items-center justify-between mt-5">
         <StarRatings count={1} size={10} />
         <small className="ml-2 text-white-300 font-bold">
-          {userInfo.github_username.charAt(0).toUpperCase() +
-            userInfo.github_username.slice(1)}
+          {usersInfo.github_username.charAt(0).toUpperCase() +
+            usersInfo.github_username.slice(1)}
         </small>
       </div>
     </div>

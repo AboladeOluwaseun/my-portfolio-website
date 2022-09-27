@@ -6,8 +6,8 @@ import { ResponsiveNavbar } from "../components/Navbar";
 import { FaStar, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
-import { projects } from "../data/projects.json";
-import userInfo from "../data/usersInfo.json";
+import projects from "../data/projects";
+import usersInfo from "../data/usersInfo";
 
 function Projects() {
   const [windowWidth, setWindowWidth] = useState(0);

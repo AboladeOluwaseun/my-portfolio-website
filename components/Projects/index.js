@@ -4,8 +4,8 @@ import { FaStar, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import SubHeading from "../SubHeading";
 import Heading from "../Heading";
-import { projects } from "../../data/projects.json";
-import userInfo from "../../data/usersInfo.json";
+import projects from "../../data/projects";
+import usersInfo from "../../data/usersInfo";
 import Image from "next/image";
 
 function Projects() {
@@ -41,7 +41,7 @@ function Projects() {
   });
   async function fetchRepos() {
     let res;
-    let url = `https://api.github.com/users/${userInfo.github_username}/repos`;
+    let url = `https://api.github.com/users/${usersInfo.github_username}/repos`;
     if (localStorage.getItem("user_repos") === null) {
       try {
         setLoading(true);

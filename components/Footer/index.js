@@ -2,8 +2,8 @@ import { Container } from "..";
 import { FaTwitter, FaGithub, FaFacebook, FaVoicemail } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 
-import { socials } from "../../data/socials.json";
-import usersInfo from "../../data/usersInfo.json";
+import socials from "../../data/socials";
+import usersInfo from "../../data/usersInfo";
 
 function Footer() {
   const mySocials = socials.map((social) => {

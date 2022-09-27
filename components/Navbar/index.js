@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IconContext } from "react-icons";
-import usersInfo from "../../data/usersInfo.json";
-import { socials } from "../../data/socials.json";
+import usersInfo from "../../data/usersInfo";
+import socials from "../../data/socials";
 import Image from "next/image";
 import logo from "../../public/images/avatar/logo.png";
 

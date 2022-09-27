@@ -1,6 +1,6 @@
 import Link from "next/link";
-import skills from "../../data/skills.json";
-import usersInfo from "../../data/usersInfo.json";
+import skills from "../../data/skills";
+import usersInfo from "../../data/usersInfo";
 import IntroCards from "./IntroCards";
 import Heading from "../Heading";
 import SubHeading from "../SubHeading";
@@ -15,7 +15,7 @@ export default function Intro() {
             <SubHeading title={"WHAT I DO"} />
             <Heading heading={"My Skills"} />
             <div className="lmd:flex items-center justify-between lmd:space-x-4">
-              <IntroCards data={skills.skill} />
+              <IntroCards data={skills} />
             </div>
           </div>
 

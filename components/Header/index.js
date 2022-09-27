@@ -3,8 +3,8 @@ import ResumeViewer from "./ResumeViewer";
 import { Container } from "..";
 import userAvatar from "../../public/images/avatar/avatar.png";
 import myImg from "../../public/images/avatar/profile.png";
-import usersInfo from "../../data/usersInfo.json";
-import languages from "../../data/languages.json";
+import usersInfo from "../../data/usersInfo";
+import languages from "../../data/languages";
 import Image from "next/image";
 import SubHeading from "../SubHeading";
 
