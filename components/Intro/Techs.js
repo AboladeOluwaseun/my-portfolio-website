@@ -52,6 +52,30 @@ const Techs = () => {
           alt="TypeSctipt logo"
         />
       </div>
+      {/* <div className="mr-2">
+        <Image
+          src="/assets/techs/redux.svg"
+          width={45}
+          height={45}
+          alt="Redux logo"
+        />
+      </div>
+      <div className="mr-2 ">
+        <Image
+          src="/assets/techs/material-ui-1.svg"
+          width={40}
+          height={40}
+          alt="Material UI logo"
+        />
+      </div>
+      <div className="mr-2">
+        <Image
+          src="/assets/techs/firebase-2.svg"
+          width={40}
+          height={40}
+          alt="FireBase logo"
+        />
+      </div> */}
       <div className="mr-2">
         <Image
           src="/assets/techs/tailwind.svg"

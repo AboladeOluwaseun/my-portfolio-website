@@ -21,13 +21,15 @@ export default function HomePage() {
     <DataContextProvider>
       <DomHead />
       <Layout>
-        <Container>
-          <Intro />
-          <Projects />
-        </Container>
-        {/* <Quote /> */}
-        <Contact />
-        <Footer />
+        <div className=" bg-form-background">
+          <Container>
+            <Intro />
+            <Projects />
+          </Container>
+          {/* <Quote /> */}
+          <Contact />
+          <Footer />
+        </div>
       </Layout>
     </DataContextProvider>
   );

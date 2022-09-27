@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { NavBar, Footer, Header, DomHead } from "..";
+import { NavBar, Footer, Hero, DomHead } from "..";
 import { ResponsiveNavbar } from "../Navbar";
 
 function Layout({ children }) {
@@ -14,11 +14,11 @@ function Layout({ children }) {
   }, [windowWidth]);
 
   return (
-    <div className={`w-screen h-screen `}>
+    <div className={`w-screen h-screen  `}>
       <DomHead />
-      <div className="bg-dark-200">
+      <div>
         <NavBar />
-        <Header />
+        <Hero />
       </div>
 
       {children}

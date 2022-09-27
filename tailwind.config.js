@@ -27,6 +27,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "form-background": "linear-gradient(180deg, #19191b 0%, #2d3036 100%)",
+        "form-background-inverse":
+          "linear-gradient(180deg, #2d3036 0%, #19191b 100%)",
       },
       screens: {
         xxsm: "360px",
@@ -39,7 +41,7 @@ module.exports = {
         xxl: "1536px",
       },
       colors: {
-        yellow: "#f9af20",
+        yellow: "#e99f4c",
         dark: {
           100: "#202022",
           200: "#2d2e32",

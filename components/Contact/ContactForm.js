@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [isSubmited, setIsSubmitted] = useState({
@@ -9,13 +10,9 @@ const ContactForm = () => {
   });
 
   const contactForm = useRef(null);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
 
-  const onSubmit = async (data, e) => {
+  const onSubmit = async (e) => {
+    e.preventDefault();
     setIsSubmitted((prev) => {
       return {
         ...prev,
@@ -25,10 +22,10 @@ const ContactForm = () => {
 
     await emailjs
       .sendForm(
-        "gmail",
-        "template_w1jd3rl",
+        "service_ss9t5mc",
+        "template_bdp2q1q",
         contactForm.current,
-        "user_aZUlxr77j4b0Vq1hWXrFl"
+        "rmDF4hzmd3Jsbbt9n"
       )
       .then(
         (res) => {
@@ -42,6 +39,7 @@ const ContactForm = () => {
         },
         (err) => {
           setIsSubmitted((prev) => {
+            setError(err.message);
             return {
               ...prev,
               send: false,
@@ -53,44 +51,39 @@ const ContactForm = () => {
     e.target.reset();
   };
   return (
-    <div className=" bg-form-background mt-6 lmd:mt-0 flex items-start justify-between rounded-lg pt-16 px-8 pb-4 lmd:max-w-[70%]">
-      <form ref={contactForm} onSubmit={handleSubmit(onSubmit)}>
+    <div className=" bg-form-background mt-6 lmd:mt-0 flex items-start justify-between rounded-lg py-16 px-8 pb-4 lmd:max-w-[40%]">
+      <form ref={contactForm} onSubmit={onSubmit}>
         <input
-          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 lmd:w-[49%] mr-2"
+          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 bg-[#19191b] lmd:w-[49%] mr-2"
           type="text"
-          {...register("name", { required: "Please Provide a Name" })}
+          name="user_name"
           placeholder="Your Full Name"
         />
         <input
-          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 lmd:w-[49%]"
+          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 bg-[#19191b] lmd:w-[49%] placeholder:text-[0.9rem] font-bold text-[#ffffff75]"
           type="number"
-          {...register("phone", {
-            required: "Please Provide a Phone Number",
-          })}
+          name="user_number"
           placeholder="Your Phone Number"
         />
         <input
-          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded mb-4  "
+          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded mb-4 bg-[#19191b] "
           type="email"
-          {...register("email", { required: "Pleae Provide an Email" })}
+          name="user_email"
           placeholder="Your Email"
         />
         <input
-          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded mb-4   "
+          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded mb-4 bg-[#19191b]"
           type="text"
-          {...register("subject", {
-            required: "Please Provide a Subject",
-          })}
+          name="subject"
           placeholder="Subject"
         />
         <textarea
+          className="w-[100%] resize-none h-28 bg-[#19191b] border-none outline-none p-4"
           placeholder="Your Message"
-          {...register("message", {
-            required: "Please Provide a Message",
-          })}
+          name="message"
         ></textarea>
-        <p>
-          {errors.name
+        <p className=" text-[1rem] font-bold text-[#f9af20] my-2 mx-0 p-0 max-w-[100%] ">
+          {/* {errors.name
             ? errors.name?.message
             : errors.phone
             ? errors.phone?.message
@@ -100,13 +93,16 @@ const ContactForm = () => {
             ? errors.subject?.message
             : errors.message
             ? errors.message?.message
-            : ""}
+            : ""} */}
         </p>
         <p className="success">
           {isSubmited.success && "Your message has been sent successfully"}
         </p>
 
-        <button type="submit">
+        <button
+          className="py-2 px-8 text-[1rem] bg-white-100 rounded-md text-[#2d3036] font-bold "
+          type="submit"
+        >
           {isSubmited.send ? "Sending ..." : "Send"}
         </button>
       </form>

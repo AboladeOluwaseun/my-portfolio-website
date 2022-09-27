@@ -22,10 +22,7 @@ const IntroCards = ({ data }) => {
               </a>
             </div>
 
-            <ion-icon
-              name="color-wand"
-              class={`absolute top-3 right-3 text-white p-1 `}
-            ></ion-icon>
+            {/* <ion-icon name="color-wand"></ion-icon> */}
           </div>
         );
       })}

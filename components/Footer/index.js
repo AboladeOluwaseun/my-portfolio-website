@@ -1,72 +1,39 @@
-import { Container } from "..";
-import { FaTwitter, FaGithub, FaFacebook, FaVoicemail } from "react-icons/fa";
-import { AiFillMail } from "react-icons/ai";
-
 import socials from "../../data/socials";
-import usersInfo from "../../data/usersInfo";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../public/images/avatar/logo.png";
 
-function Footer() {
-  const mySocials = socials.map((social) => {
-    return <SocialLink url={social.link} children={<FaTwitter />} />;
+const Footer = () => {
+  const filteredSocials = socials.filter((social) => {
+    if (
+      social.name === "twitter" ||
+      social.name === "github" ||
+      social.name === "linkedIn"
+    ) {
+      return social;
+    }
   });
+  const Icons = filteredSocials.map((social, index) => {
+    return (
+      <Link href={social.link} key={index}>
+        <a className="mr-3" target="_blank" title={social.name}>
+          <Image src={social.image} width={25} height={25} alt={social.name} />
+        </a>
+      </Link>
+    );
+  });
+  const yearNow = new Date().getFullYear();
   return (
-    <div
-      id="footer"
-      className="relative w-screen h-[35vh] py-5 px-3 bg-dark-300 "
-    >
-      <Container>
-        <div className="relative flex flex-row items-center justify-between">
-          <div className="left flex flex-row">
-            <h1 className=" text-[15px] ">
-              <span className="font-extrabold">
-                {usersInfo.github_username}
-              </span>
-            </h1>
-            <small className="ml-[20px] text-white-200 ">
-              &copy; {new Date().getFullYear()} All Right Reserved.
-            </small>
-          </div>
-          <div className="right">
-            <div className="socials flex flex-row items-center justify-center">
-              {mySocials[0]}
-            </div>
-          </div>
-
-          {/* Leave this just to give some credits about the maker */}
+    <section className="  -mt-4 ">
+      <div className="max-w-[80%] mx-auto">
+        <div className=" flex flex-col items-center py-8">
+          <Image src={logo} width={160} height={30} alt="mhbaando logo" />
+          <div className="my-4">{Icons}</div>
+          <p className="text-[0.7rem] font-bold">{`© ${yearNow} Copyright Allrights Reserved`}</p>
         </div>
-      </Container>
-      <Refer />
-    </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default Footer;
-
-function SocialLink({ url, children }) {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      className=" no-underline text-white-100 decoration-none hover:text-white-100 mr-4 "
-    >
-      {children}
-    </a>
-  );
-}
-
-function Refer() {
-  return (
-    <div className="w-screen flex flex-row items-center justify-center absolute bottom-[100px] mx-auto md:bottom-[10px]">
-      <span className="py-2 text-[12px] text-white-200 ">
-        Powered with 💖 by{" "}
-        <a
-          target="_blank"
-          href="https://github.com/benrobo/baaymax"
-          className="text-green-200 underline hover:text-green-200"
-        >
-          BaayMax
-        </a>
-      </span>
-    </div>
-  );
-}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -14,10 +14,10 @@ function NavBar() {
     { name: "Projects", address: "/projects" },
     { name: "Contact", address: "#contact" },
   ];
-
-  const nav = links.map((link) => {
+  const nav = links.map((link, index) => {
     return (
       <li
+        key={index}
         className={`transition-all ease-in-out duration-[500ms] relative hover:text-yellow hover:font-extrabold cursor-pointer text-[1.2rem] after:content-[""] after:absolute after:left-0 after:bottom-[-25%] after:w-[0%] after:h-[3px] after:rounded-[20px] after:bg-yellow after:transition-all after:duration-[500ms] after:ease-in-out hover:after:w-[100%]  `}
       >
         <Link href={link.address}>{link.name}</Link>
@@ -34,7 +34,7 @@ function NavBar() {
       return social;
     }
   });
-  console.log(filteredSocials);
+
   const navSocials = filteredSocials.map((social, index) => {
     return (
       <Link href={social.link} key={index}>
@@ -47,12 +47,15 @@ function NavBar() {
       </Link>
     );
   });
+
   return (
     <React.Fragment>
       <div
         className={`flex items-center justify-between py-10 max-w-[90%] mx-auto`}
       >
-        <Image width={150} height={30} src={logo} />
+        <div>
+          <Image width={150} height={30} src={logo} />
+        </div>
 
         <ul className={`hidden lmd:flex  items-center space-x-8`}>{nav}</ul>
 

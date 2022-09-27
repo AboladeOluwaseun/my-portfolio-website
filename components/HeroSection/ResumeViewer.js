@@ -3,8 +3,9 @@ import React from "react";
 const ResumeViewer = ({ openResume }) => {
   function dowloadCv() {
     let link = document.createElement("a");
-    link.href = resume;
-    link.download = "resume.pdf";
+    link.href = "/CV/OluwaseunAboladeResume.pdf";
+    link.target = "iframe";
+    link.download = "OluwaseunAbolade.pdf";
     link.click();
   }
 
@@ -20,26 +21,24 @@ const ResumeViewer = ({ openResume }) => {
         >
           <h2>My Resume / CV</h2>
           <button
-            className="px-3 py-1 flex flex-row items-center justify-center bg-green-300 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  "
+            className="px-3 py-1 flex flex-row items-center justify-center bg-yellow ml-4 text-[12px] text-white-100 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95]  "
             onClick={dowloadCv}
           >
             Download
           </button>
           <button
-            className="px-3 py-1 flex flex-row items-center justify-center bg-red-500 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95] "
+            className="px-3 py-1 flex flex-row items-center justify-center bg-white-100 ml-4 text-[12px] text-dark-300 font-bold rounded-[5px] scale-[.90] transition-all hover:scale-[.95] "
             onClick={openResume}
           >
             Close
           </button>
         </div>
         <iframe
-          src={"/CV/resume.pdf"}
+          src="/CV/OluwaseunAboladeResume.pdf"
           frameborder="0"
-          className="w-full h-full overflow-scroll bg-white-200 mt-0"
+          name="iframe"
+          className="w-full h-full overflow-scroll  mt-0"
         ></iframe>
-        <br />
-        <br />
-        <br />
       </div>
     </div>
   );

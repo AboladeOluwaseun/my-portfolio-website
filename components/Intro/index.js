@@ -8,7 +8,7 @@ import Techs from "./Techs";
 
 export default function Intro() {
   return (
-    <div className="mt-8">
+    <div className=" py-4 -mt-4 ">
       <div className="max-w-[80%] lmd:max-w-[90%] mx-auto">
         <div className=" mt-16 ">
           <div>
