@@ -27,21 +27,24 @@ const Contacts = () => {
   };
 
   return (
-    <div className="mt-16">
+    <div id="contact" className="mt-16">
       <section className="  max-w-[80%] mx-auto" id="contacts">
         <div className="lmd:flex">
           <div className="lmd:max-w-[65%]">
-            <div>
+            <div data-aos="fade-right">
               <SubHeading title={"GET IN TOUCH WITH ME"} />
               <Heading heading="Contacts" />
             </div>
 
             <div className="text-[0.8rem] text-white-200 ">
-              <p className="mt-6 max-w-[70%]">
+              <p data-aos="fade-left" className="mt-6 max-w-[70%]">
                 To get my service please don't hesitate to contact me, and I
                 will ensure that you will get the best of my services
               </p>
-              <div className="mt-6 flex lmd:block items-center justify-between">
+              <div
+                data-aos="zoom-in-up"
+                className="mt-6 flex lmd:block items-center justify-between"
+              >
                 {info("Address", "Location Icon", "Ile-Ife,OsunState, Nigeria")}
                 {info(
                   "Email",

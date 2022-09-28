@@ -26,8 +26,8 @@ function Projects() {
       <button
         className={`${
           index === selected &&
-          "px-5 py-1 mt-2 rounded-md bg-yellow scale-[.90] hover:scale-[.95] transition-all "
-        } mr-2`}
+          "px-5 py-1 text-[0.5rem] font-extrabold rounded-md bg-yellow  transition-all "
+        } mr-4 mt-4`}
         key={index}
         onClick={() => {
           setIsSelected(index);
@@ -70,7 +70,7 @@ function Projects() {
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
-            className=" cursor-pointer max-h-full w-[90%] md:w-[30%] overflow-hidden border-2   mx-auto mt-6 border-white-100 hover:border-yellow border-solid rounded-lg"
+            className=" cursor-pointer max-h-full w-[90%] sm:w-[40%] md:w-[30%] overflow-hidden border-2   mx-auto mt-6 border-white-100 hover:border-yellow border-solid rounded-lg"
           >
             <Image
               width={544}
@@ -108,17 +108,20 @@ function Projects() {
     <div className=" -mt-4 py-20">
       <div className="max-w-[90%] mx-auto  ">
         <div className="sm:flex items-start">
-          <div className={`w-full `}>
+          <div data-aos="fade-right" className={`w-full `}>
             <SubHeading title="MY RECENT WORK" />
             <Heading heading="Projects" />
           </div>
-          <div className="flex mt-2 lmd:mt-0 items-center  lmd:flex-wrap max-w-[100%] lmd:max-w-[50%] flex-wrap ">
+          <div
+            data-aos="fade-left"
+            className="flex mt-2 lmd:mt-0 items-center  lmd:flex-wrap max-w-[100%] lmd:max-w-[50%] flex-wrap "
+          >
             {techsList}
           </div>
         </div>
 
         <div data-aos="zoom-in-up">
-          <div className="mt-8 md:flex  justify-start  flex-wrap -m-4">
+          <div className="mt-8 sm:flex  justify-start  flex-wrap -m-4">
             {projectsDisplay}{" "}
           </div>
         </div>

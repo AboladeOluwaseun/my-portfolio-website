@@ -16,7 +16,7 @@ import {
 const NavBar = () => {
   const links = [
     { name: "Home", address: "/" },
-    { name: "About", address: "/about" },
+    { name: "About", address: "/#about" },
     { name: "Projects", address: "/projects" },
     { name: "Contact", address: "#contact" },
   ];
@@ -26,7 +26,8 @@ const NavBar = () => {
       <motion.li
         variants={childVariant}
         key={index}
-        className={`transition-all ease-in-out duration-[500ms] relative hover:text-yellow hover:font-extrabold cursor-pointer text-[1.2rem] after:content-[""] after:absolute after:left-0 after:bottom-[-25%] after:w-[0%] after:h-[3px] after:rounded-[20px] after:bg-yellow after:transition-all after:duration-[500ms] after:ease-in-out hover:after:w-[100%]  `}
+        whileHover="hover"
+        className={`transition-all ease-in-out duration-[500ms] relative hover:text-yellow hover:font-extrabold cursor-pointer text-[1rem] after:content-[""] after:absolute after:left-0 after:bottom-[-25%] after:w-[0%] after:h-[3px] after:rounded-[20px] after:bg-yellow after:transition-all after:duration-[500ms] after:ease-in-out hover:after:w-[100%]  `}
       >
         <Link href={link.address}>{link.name}</Link>
       </motion.li>
@@ -47,6 +48,7 @@ const NavBar = () => {
     return (
       <Link href={social.link} key={index}>
         <motion.a
+          whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
           whileHover={{ scale: 1.4, cursor: "pointer" }}
           transition={{ type: "spring", stiffness: 400 }}
           className="relative"
@@ -67,12 +69,18 @@ const NavBar = () => {
       <div
         className={`flex items-center justify-between py-10 max-w-[90%] mx-auto`}
       >
-        <motion.div variants={imageVariant} initial="hidden" animate="visible">
+        <motion.div
+          variants={imageVariant}
+          whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
+          initial="hidden"
+          animate="visible"
+        >
           <Image width={150} height={30} src={logo} />
         </motion.div>
 
         <motion.ul
           variants={LinksVariant}
+          whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
           initial="hidden"
           animate="visible"
           className={`hidden lmd:flex  items-center space-x-8`}

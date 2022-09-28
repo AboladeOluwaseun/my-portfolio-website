@@ -5,18 +5,29 @@ import IntroCards from "./IntroCards";
 import Heading from "../Heading";
 import SubHeading from "../SubHeading";
 import Techs from "./Techs";
+import { motion } from "framer-motion";
 
 export default function Intro() {
+  const titleVarient = {
+    inView: { y: ["10%", "0%", "10%", "0%"], opacity: [0, 0.5, 1] },
+  };
+
   return (
-    <div className=" py-4 -mt-4 ">
+    <div id="about" className=" py-4 -mt-4 ">
       <div className="max-w-[80%] lmd:max-w-[90%] mx-auto">
         <div className=" mt-16 ">
           <div>
-            <SubHeading title={"WHAT I DO"} />
-            <Heading heading={"My Skills"} />
-            <div className="lmd:flex items-center justify-between lmd:space-x-4">
+            <motion.div
+              variants={titleVarient}
+              whileInView={titleVarient.inView}
+            >
+              <SubHeading title={"WHAT I DO"} />
+              <Heading heading={"My Skills"} />
+            </motion.div>
+
+            <motion.div className="lmd:flex items-center justify-between lmd:space-x-4">
               <IntroCards data={skills} />
-            </div>
+            </motion.div>
           </div>
 
           <div data-aos="zoom-in-up">
@@ -27,7 +38,7 @@ export default function Intro() {
               </div>
 
               <div className="mt-8 lmd:flex justify-between ">
-                <p className="lmd:max-w-[40%]">
+                <p className="lmd:max-w-[40%] text-[1rem]">
                   I am a professional{" "}
                   <span className="text-yellow">front-end</span> developer,{" "}
                   <span className="text-yellow">UI/X</span> Designer,{" "}

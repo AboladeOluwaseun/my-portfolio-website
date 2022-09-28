@@ -51,10 +51,13 @@ const ContactForm = () => {
     e.target.reset();
   };
   return (
-    <div className=" bg-form-background mt-6 lmd:mt-0 flex items-start justify-between rounded-lg py-16 px-8 pb-4 lmd:max-w-[40%]">
+    <div
+      data-aos="zoom-in-up"
+      className=" bg-form-background mt-6 lmd:mt-0 flex items-start justify-between rounded-lg py-16 px-8 pb-4 lmd:max-w-[40%]"
+    >
       <form ref={contactForm} onSubmit={onSubmit}>
         <input
-          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 bg-[#19191b] lmd:w-[49%] mr-2"
+          className="w-[100%] py-[0.6rem] px-4 leading-[150%] rounded inline-flex mb-4 bg-[#19191b] lmd:w-[49%] mr-1"
           type="text"
           name="user_name"
           placeholder="Your Full Name"

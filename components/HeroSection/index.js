@@ -61,12 +61,13 @@ export default function Hero({ children }) {
           className="relative "
         >
           <div className="">
-            <div data-aos="fade-left">
+            <div>
               <SubHeading title={"Introduction"} />
               <motion.div
                 transition={{ duration: 0.5 }}
                 variants={childVariant}
                 className="mt-4"
+                whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
               >
                 <h1 className={` text-[2rem] font-bold`}>
                   {usersInfo.greeting_type} <br /> I'm{" "}
@@ -77,7 +78,8 @@ export default function Hero({ children }) {
             <motion.div
               transition={{ duration: 2 }}
               variants={childVariant}
-              className="text-[1.2rem] lmd:max-w-[60%] mt-4"
+              whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
+              className="text-[1rem] lmd:max-w-[60%] mt-4"
             >
               A Frontend Developer with a passion for building scalable websites
               and webapps that provide solution to needs of people.

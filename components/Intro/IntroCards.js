@@ -6,7 +6,7 @@ const IntroCards = ({ data }) => {
       {data.map((skill, i) => {
         return (
           <div
-            data-aos="zoom-in-up"
+            data-aos="fade-right"
             key={i}
             className={` w-full h-40 p-5 rounded-lg bg-dark-200 relative transition-all mt-8 hover:shadow-2xl `}
           >

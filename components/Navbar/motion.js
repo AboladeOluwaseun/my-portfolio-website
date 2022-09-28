@@ -13,7 +13,7 @@ export const LinksVariant = {
   },
   visible: {
     y: 0,
-    transition: { delay: 1, when: "beforeChildren", staggerChildren: 0.7 },
+    transition: { delay: 1, when: "beforeChildren", staggerChildren: 0.5 },
   },
 };
 
@@ -42,5 +42,11 @@ export const childVariant = {
   visible: {
     y: 0,
     opacity: 1,
+    hover: {
+      scale: 1.1,
+    },
+    transition: {
+      duration: 1,
+    },
   },
 };
