@@ -41,7 +41,7 @@ module.exports = {
         xxl: "1536px",
       },
       colors: {
-        yellow: "#e99f4c",
+        yellow: "#f9af20",
         dark: {
           100: "#202022",
           200: "#2d2e32",

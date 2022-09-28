@@ -24,7 +24,7 @@ const Footer = () => {
   });
   const yearNow = new Date().getFullYear();
   return (
-    <section className="  -mt-4 ">
+    <section className="mt-8 ">
       <div className="max-w-[80%] mx-auto">
         <div className=" flex flex-col items-center py-8">
           <Image src={logo} width={160} height={30} alt="mhbaando logo" />

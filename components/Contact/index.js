@@ -27,7 +27,7 @@ const Contacts = () => {
   };
 
   return (
-    <div className=" py-8 -mt-4">
+    <div className="mt-16">
       <section className="  max-w-[80%] mx-auto" id="contacts">
         <div className="lmd:flex">
           <div className="lmd:max-w-[65%]">

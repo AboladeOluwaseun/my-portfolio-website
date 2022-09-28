@@ -17,6 +17,7 @@
     "@netlify/plugin-nextjs": "^4.23.1",
     "aos": "^2.3.4",
     "dotenv": "^16.0.0",
+    "framer-motion": "^7.4.0",
     "gradient-string": "^2.0.1",
     "gsap": "^3.11.2",
     "inquirer": "^8.2.4",
