@@ -8,7 +8,7 @@ const IntroCards = ({ data }) => {
           <div
             data-aos="fade-right"
             key={i}
-            className={`max-w-[45%] lmd:max-w-[50%] h-40 p-5 rounded-lg bg-dark-200 relative transition-all mt-8 hover:shadow-2xl cursor-pointer `}
+            className={`max-w-[60%] sm:max-w-[40%] lmd:max-w-[45%] h-52 p-5 rounded-lg bg-dark-200 relative transition-all mt-8 hover:shadow-2xl cursor-pointer `}
           >
             <div className="flex flex-col justify-between">
               <p className="font-extrabold text-yellow">{skill.name}</p>
