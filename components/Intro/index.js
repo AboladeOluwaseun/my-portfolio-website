@@ -25,7 +25,7 @@ export default function Intro() {
               <Heading heading={"My Skills"} />
             </motion.div>
 
-            <motion.div className=" flex flex-col sm:flex-row  items-center justify-between ">
+            <motion.div className=" flex flex-col sm:flex-row items-center justify-between ">
               <IntroCards data={skills} />
             </motion.div>
           </div>

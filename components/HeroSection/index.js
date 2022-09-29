@@ -52,7 +52,7 @@ const Hero = ({ children }) => {
   return (
     <>
       <div
-        className={`max-w-[80%] overflow-y-hidden  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 min-h-[100vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 min-h-[100vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
@@ -86,7 +86,7 @@ const Hero = ({ children }) => {
               and collaborated with talented people to create digital products
             </motion.div>
 
-            <motion.span
+            <motion.div
               transition={{ duration: 2 }}
               variants={childVariant}
               whileInView={{
@@ -96,7 +96,7 @@ const Hero = ({ children }) => {
               className="text-[1.2rem] mt-4 text-yellow"
             >
               {usersInfo.subTitle}
-            </motion.span>
+            </motion.div>
           </div>
 
           <div data-aos="fade-left" className="flex items-center  mt-6">
