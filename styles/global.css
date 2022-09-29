@@ -49,7 +49,7 @@ body {
 body {
   font-family: var(--poppin);
   color: var(--white1);
-  background: var(--bg1);
+  /* background: var(--bg1); */
 }
 html,
 body {

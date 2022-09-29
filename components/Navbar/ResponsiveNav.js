@@ -94,7 +94,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="absolute right-0 top-0 z-[1] h-[100vh] w-[300px] pt-5 origin-right bg-[#19191b]"
+            className="fixed right-0 top-0 z-[1] h-[100vh] w-[300px] pt-5 origin-right bg-[#19191b]"
           >
             <motion.div
               variants={child}
