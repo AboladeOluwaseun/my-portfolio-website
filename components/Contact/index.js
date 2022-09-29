@@ -15,7 +15,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contact" className="mt-16">
+    <div id="contact" className="mt-40">
       <section className="  max-w-[80%] mx-auto" id="contacts">
         <div className="lmd:flex">
           <div className="lmd:max-w-[65%]">
