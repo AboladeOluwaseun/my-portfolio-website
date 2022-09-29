@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import SubHeading from "../SubHeading";
 import Heading from "../Heading";
@@ -106,7 +106,7 @@ function Projects() {
 
   return (
     <div className=" -mt-4 py-20">
-      <div className="max-w-[90%] mx-auto  ">
+      <div className="max-w-[80%] mx-auto  ">
         <div className="sm:flex items-start">
           <div data-aos="fade-right" className={`w-full `}>
             <SubHeading title="MY RECENT WORK" />

@@ -1,29 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { NavBar, Footer, Hero, DomHead } from "..";
-import { ResponsiveNavbar } from "../Navbar";
+import { NavBar, DomHead, Footer } from "..";
 
 function Layout({ children }) {
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", () => {
-      setWindowWidth(window.innerWidth);
-    });
-  }, [windowWidth]);
-
   return (
-    <div className={`w-screen h-screen  `}>
+    <div className=" bg-form-background">
       <DomHead />
-      <div>
-        <NavBar />
-        <Hero />
-      </div>
-
+      <NavBar />
       {children}
-      {/* {windowWidth <= 700 && <ResponsiveNavbar />} */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

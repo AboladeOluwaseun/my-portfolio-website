@@ -1,19 +1,7 @@
-import React, { useContext, useState } from "react";
-import { Container } from "..";
-import { AiFillMessage, AiOutlineClose } from "react-icons/ai";
-import DataContext from "../../context/DataContext";
-import emailjs from "@emailjs/browser";
-import { Notification, validateEmail } from "../../helpers";
-import {
-  EMAILJS_TEMPLATE_ID,
-  EMAILJS_SERVICE_ID,
-  EMAILJS_PUBLIC_KEY,
-} from "../../config";
+import React from "react";
 import ContactForm from "./ContactForm";
 import Heading from "../Heading";
 import SubHeading from "../SubHeading";
-
-const notif = new Notification(3000);
 
 const Contacts = () => {
   // contact info handler

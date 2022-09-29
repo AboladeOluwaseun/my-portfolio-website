@@ -14,7 +14,7 @@ export default function Intro() {
 
   return (
     <div id="about" className=" py-4 -mt-4 ">
-      <div className="max-w-[80%] lmd:max-w-[90%] mx-auto">
+      <div className="max-w-[80%] lmd:max-w-[80%] mx-auto">
         <div className=" mt-16 ">
           <div>
             <motion.div
@@ -25,7 +25,7 @@ export default function Intro() {
               <Heading heading={"My Skills"} />
             </motion.div>
 
-            <motion.div className="lmd:flex items-center justify-between lmd:space-x-4">
+            <motion.div className="flex items-center justify-between ">
               <IntroCards data={skills} />
             </motion.div>
           </div>

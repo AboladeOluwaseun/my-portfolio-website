@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -12,21 +12,21 @@ import {
   LinksVariant,
   containerVariant,
 } from "./motion";
+import ResponsiveNav from "./ResponsiveNav";
 
 const NavBar = () => {
-  const links = [
+  const [isOpen, setIsOpen] = useState(false);
+  const linksArray = [
     { name: "Home", address: "/" },
     { name: "About", address: "/#about" },
     { name: "Projects", address: "/projects" },
     { name: "Contact", address: "#contact" },
   ];
 
-  const nav = links.map((link, index) => {
+  const links = linksArray.map((link, index) => {
     return (
       <motion.li
-        variants={childVariant}
         key={index}
-        whileHover="hover"
         className={`transition-all ease-in-out duration-[500ms] relative hover:text-yellow hover:font-extrabold cursor-pointer text-[1rem] after:content-[""] after:absolute after:left-0 after:bottom-[-25%] after:w-[0%] after:h-[3px] after:rounded-[20px] after:bg-yellow after:transition-all after:duration-[500ms] after:ease-in-out hover:after:w-[100%]  `}
       >
         <Link href={link.address}>{link.name}</Link>
@@ -44,7 +44,7 @@ const NavBar = () => {
     }
   });
 
-  const navSocials = filteredSocials.map((social, index) => {
+  const socialIcons = filteredSocials.map((social, index) => {
     return (
       <Link href={social.link} key={index}>
         <motion.a
@@ -85,7 +85,7 @@ const NavBar = () => {
           animate="visible"
           className={`hidden lmd:flex  items-center space-x-8`}
         >
-          {nav}
+          {links}
         </motion.ul>
 
         <motion.ul
@@ -94,8 +94,13 @@ const NavBar = () => {
           animate="visible"
           className={"flex space-x-2"}
         >
-          {navSocials}
-          <div className="lmd:hidden">
+          {socialIcons}
+          <div
+            onClick={() => {
+              setIsOpen(true);
+            }}
+            className="lmd:hidden"
+          >
             <IconContext.Provider
               value={{
                 color: "#f9af20",
@@ -106,6 +111,7 @@ const NavBar = () => {
               <BiMenuAltRight />
             </IconContext.Provider>
           </div>
+          <ResponsiveNav isOpen={isOpen} setIsOpen={setIsOpen} />
         </motion.ul>
       </div>
     </>

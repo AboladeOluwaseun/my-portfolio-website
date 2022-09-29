@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useRef } from "react";
-import { set, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {

@@ -12,7 +12,7 @@ import {
   buttonVariant,
 } from "./motion";
 
-export default function Hero({ children }) {
+const Hero = ({ children }) => {
   const [resumeActive, setResumeActive] = useState(false);
   const [reposcount, setReposCount] = useState(0);
 
@@ -52,13 +52,13 @@ export default function Hero({ children }) {
   return (
     <>
       <div
-        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[60%] relative mx-auto mt-16 lmd:mt-8 min-h-[100vh] flex items-start py-4 space-y-14 lmd:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 lmd:mt-8 min-h-[100vh] flex items-start py-4 space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
           initial="hidden"
           animate="visible"
-          className="relative "
+          className="relative md:max-w-[60%]"
         >
           <div className="">
             <div>
@@ -81,8 +81,9 @@ export default function Hero({ children }) {
               whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
               className="text-[1rem] lmd:max-w-[60%] mt-4"
             >
-              A Frontend Developer with a passion for building scalable websites
-              and webapps that provide solution to needs of people.
+              Since beginning of my journey as a freelance designer and
+              Developer I've done remote work for Agencies consulted for startup
+              and collaborated with talented people to create digital products
             </motion.div>
 
             <motion.span
@@ -151,4 +152,6 @@ export default function Hero({ children }) {
       </div>
     </>
   );
-}
+};
+
+export default Hero;

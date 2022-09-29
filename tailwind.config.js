@@ -29,6 +29,8 @@ module.exports = {
         "form-background": "linear-gradient(180deg, #19191b 0%, #2d3036 100%)",
         "form-background-inverse":
           "linear-gradient(180deg, #2d3036 0%, #19191b 100%)",
+        "mobile-overlay":
+          "linear-gradient(-90deg, #f9af20 0%, transparent 100% )",
       },
       screens: {
         xxsm: "360px",
