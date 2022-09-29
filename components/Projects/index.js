@@ -105,7 +105,7 @@ function Projects() {
     });
 
   return (
-    <div className=" mt-32">
+    <div className=" mt-40">
       <div className="max-w-[80%] mx-auto  ">
         <div className="sm:flex items-start">
           <div data-aos="fade-right" className={`w-full `}>

@@ -2,7 +2,7 @@ const usersInfo = {
   full_name: "Abolade Oluwaseun",
   tag_line: "providing solutions to problems",
   intro_tagline: "FrontEnd Developer",
-  subTitle: "Think..Create..Solve..Build",
+  subTitle: "Think....Solve....Build",
   tech_year: "2020",
   github_username: "AboladeOluwaseun",
   user_skill: "Frontend Developer",

@@ -13,9 +13,9 @@ export default function Intro() {
   };
 
   return (
-    <div id="about" className="  mt-16 ">
+    <div id="about" className="  mt-40 ">
       <div className="max-w-[80%] lmd:max-w-[80%] mx-auto">
-        <div className=" mt-16 ">
+        <div className="  ">
           <div>
             <motion.div
               variants={titleVarient}

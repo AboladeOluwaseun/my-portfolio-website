@@ -52,7 +52,7 @@ const Hero = ({ children }) => {
   return (
     <>
       <div
-        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 lmd:mt-8 min-h-[100vh] flex items-start py-4 space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 max-h-[100vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
@@ -87,18 +87,19 @@ const Hero = ({ children }) => {
             </motion.div>
 
             <motion.span
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               variants={childVariant}
+              whileInView={{
+                x: ["60%", "0%"],
+                opacity: [0, 0.2, 0.3, 0.5, 0.6, 0.9, 1],
+              }}
               className="text-[1.2rem] mt-4 text-yellow"
             >
               {usersInfo.subTitle}
             </motion.span>
           </div>
 
-          <div
-            data-aos="fade-left"
-            className="flex items-center align-middle  mt-6"
-          >
+          <div data-aos="fade-left" className="flex items-center  mt-6">
             <motion.div
               transition={{ duration: 4 }}
               variants={childVariant}
@@ -143,6 +144,10 @@ const Hero = ({ children }) => {
 
         <motion.div
           variants={imageVariant}
+          whileInView={{
+            y: ["20%", "0%"],
+            opacity: [0, 0.2, 0.3, 0.5, 0.6, 0.9, 1],
+          }}
           initial="hidden"
           animate="visible"
           className="lmd:mb-8 "
