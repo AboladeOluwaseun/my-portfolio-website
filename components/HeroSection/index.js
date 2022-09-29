@@ -52,7 +52,7 @@ const Hero = ({ children }) => {
   return (
     <>
       <div
-        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 max-h-[100vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%] overflow-y-hidden  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 max-h-[100vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
