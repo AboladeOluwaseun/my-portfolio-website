@@ -12,7 +12,7 @@ const IntroCards = ({ data }) => {
           >
             <div className="flex flex-col justify-between">
               <p className="font-extrabold text-yellow">{skill.name}</p>
-              <p className=" text-[0.75rem] text-white-300 mt-2">
+              <p className=" text-[0.75rem] text-white-200 mt-2">
                 {skill.description}
               </p>
             </div>

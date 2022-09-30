@@ -27,6 +27,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
     { name: "About", address: "/#about" },
     { name: "Projects", address: "/projects" },
     { name: "Contact", address: "#contact" },
+    { name: "Blog", address: "#blog" },
   ];
 
   const links = Links.map((link, index) => {

@@ -21,6 +21,7 @@ const NavBar = () => {
     { name: "About", address: "/#about" },
     { name: "Projects", address: "/projects" },
     { name: "Contact", address: "#contact" },
+    { name: "Blogs", address: "#blog" },
   ];
 
   const links = linksArray.map((link, index) => {
@@ -54,6 +55,7 @@ const NavBar = () => {
           className="relative"
           target="_blank"
           title={social.name}
+          href={social.link}
         >
           <p className="absolute hidden hover:visible text-white-100">
             {social.name}

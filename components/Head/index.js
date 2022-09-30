@@ -7,10 +7,7 @@ export default function DomHead({ pageName = "Home Page" }) {
       <title>Oluwaseun - {pageName} </title>
       {/* meta tags begins */}
       {/* Primary Meta Tags */}
-      <meta
-        name="title"
-        content="BaayMax — Generate a unique developer portfolio with just one click"
-      />
+      <meta name="title" content="Abolade Oluwaseun's website portfolio" />
       <meta
         name="description"
         content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set."
@@ -37,10 +34,7 @@ export default function DomHead({ pageName = "Home Page" }) {
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://metatags.io/" />
-      <meta
-        property="twitter:title"
-        content="BaayMax — Generate a unique developer portfolio with just one click"
-      />
+      <meta property="twitter:title" content="Abolade Oluwaseun portfolio" />
       <meta
         property="twitter:description"
         content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set."

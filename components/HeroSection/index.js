@@ -52,7 +52,7 @@ const Hero = ({ children }) => {
   return (
     <>
       <div
-        className={`max-w-[80%]  sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 min-h-[100vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%] sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 min-h-[70vh] md:min-h-[40vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
@@ -81,9 +81,8 @@ const Hero = ({ children }) => {
               whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
               className="text-[1rem] lmd:max-w-[60%] mt-4"
             >
-              Since beginning of my journey as a freelance designer and
-              Developer I've done remote work for Agencies consulted for startup
-              and collaborated with talented people to create digital products
+              I enjoy creating frontend solutions that are reliable, scalable,
+              and have excellent user experiences.
             </motion.div>
 
             <motion.div
@@ -129,14 +128,14 @@ const Hero = ({ children }) => {
             variants={childVariant}
             className="mt-5"
           >
-            <motion.button
+            <motion.a
               variants={buttonVariant}
               whileHover="hover"
               className=" px-5 py-3 rounded-md bg-yellow scale-[.90] hover:scale-[.95] transition-all  "
-              onClick={openResume}
+              href="/CV/OluwaseunAboladeResume.pdf"
             >
               View CV
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           {resumeActive && <ResumeViewer openResume={openResume} />}

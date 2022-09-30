@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 @font-face {
   font-family: Poppin;
   src: url("../public/fonts/Poppins.ttf");
@@ -15,6 +16,10 @@
 @font-face {
   font-family: Cario;
   src: url("../public/fonts/Cairo-Light.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 }
 
 :root {
@@ -38,18 +43,25 @@
   --firacode: Firacode;
   --cario: Cario;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 body {
-  background-color: white;
+  background-color: rgb(104, 41, 41);
 }
 
 body {
-  font-family: var(--poppin);
+  font-family: Firacode;
   color: var(--white1);
-  /* background: var(--bg1); */
+  background: var(--bg1);
 }
 html,
 body {

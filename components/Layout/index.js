@@ -4,7 +4,7 @@ import { NavBar, DomHead, Footer } from "..";
 
 function Layout({ children }) {
   return (
-    <div className=" bg-form-background">
+    <div className=" overflow-y-hidden bg-form-background">
       <DomHead />
       <NavBar />
       {children}

@@ -13,7 +13,7 @@ export default function Intro() {
   };
 
   return (
-    <div id="about" className="  mt-40 ">
+    <div id="about" className=" mt-40 ">
       <div className="max-w-[80%] lmd:max-w-[80%] mx-auto">
         <div className="  ">
           <div>
@@ -37,17 +37,21 @@ export default function Intro() {
                 <Heading heading={"About me"} />
               </div>
 
-              <div className="mt-8 lmd:flex justify-between ">
+              <div className="mt-8 lmd:flex justify-between items-start ">
                 <p className="lmd:max-w-[40%] text-[1rem]">
-                  I am a professional{" "}
-                  <span className="text-yellow">front-end</span> developer,{" "}
-                  <span className="text-yellow">UI/X</span> Designer,{" "}
-                  <span className="text-yellow">Co-founder</span>, and
-                  <span className="text-yellow"> freelancer</span> with alot of
-                  experience in developing websites using various technologies
-                  with a background in <span className="text-yellow">2D</span>{" "}
-                  Animation and <span className="text-yellow">Videography</span>
-                  .
+                  My name is{" "}
+                  <span className="text-yellow"> Abolade Oluwaseun</span>. I'm a
+                  self-taught Front End Developer from Nigeria. I have over{" "}
+                  <span className="text-yellow"> 2 years</span> of experience
+                  creating scalable and user-friendly websites. I'd describe
+                  myself as a passionate developer who enjoys{" "}
+                  <span className="text-yellow">coding</span> ,{" "}
+                  <span className="text-yellow">open source</span>, and the web
+                  platform. Aside from my job, I enjoy creating and contributing
+                  to open source projects. That allows me to learn a lot of new
+                  things, grow as a developer, and contribute to other open
+                  source projects. <br /> I also enjoy writing on web
+                  development-related topics on my blog.
                 </p>
                 <div className="mt-10 flex items-center justify-start  flex-wrap lmd:mt-0 lmd:max-w-[40%] ">
                   <Techs />

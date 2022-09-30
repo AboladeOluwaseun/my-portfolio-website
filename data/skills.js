@@ -1,14 +1,14 @@
 const skills = [
   {
-    name: "Frontend Development",
+    name: "Frontend Web Development",
     description:
-      "I will develop your front-end website, with clean and understandable code.",
+      "I write clear and comprehensible code while creating the front end of websites and web applications.",
     projects_completed: "9",
   },
   {
     name: "Writing",
     description:
-      "I will develop your front-end website, with clean and understandable code.",
+      "Writing about web development topics that I am knowledgeable about. It's my teeny-tiny contribution to the community.",
     projects_completed: "2",
   },
 ];
