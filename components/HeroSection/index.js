@@ -52,7 +52,7 @@ const Hero = ({ children }) => {
   return (
     <>
       <div
-        className={`max-w-[80%] sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-8 min-h-[70vh] md:min-h-[40vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
+        className={`max-w-[80%] sm:max-w-[70%] md:max-w-[80%] relative mx-auto mt-16 py-4 lmd:mt-14 min-h-[70vh] md:min-h-[40vh] lmd:min-h-[70vh] flex items-start  space-y-14 md:flex-row lmd:max-w-[80%]  flex-col `}
       >
         <motion.div
           variants={containerVariant}
@@ -149,9 +149,14 @@ const Hero = ({ children }) => {
           }}
           initial="hidden"
           animate="visible"
-          className=""
+          className=" "
         >
-          <img className="w-full h-full" src="/images/avatar/profile.png" />
+          <Image
+            width={400}
+            height={400}
+            className=" mb-4 w-full h-full"
+            src="/images/avatar/profile.png"
+          />
         </motion.div>
       </div>
     </>
