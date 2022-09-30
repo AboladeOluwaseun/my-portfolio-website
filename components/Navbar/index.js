@@ -28,6 +28,11 @@ const NavBar = () => {
     return (
       <motion.li
         key={index}
+        variants={childVariant}
+        whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
+        transition={{ delay: index * 0.2, duration: 0.3 }}
+        initial="hidden"
+        animate="visible"
         className={`transition-all ease-in-out duration-[500ms] relative hover:text-yellow hover:font-extrabold cursor-pointer text-[1rem] after:content-[""] after:absolute after:left-0 after:bottom-[-25%] after:w-[0%] after:h-[3px] after:rounded-[20px] after:bg-yellow after:transition-all after:duration-[500ms] after:ease-in-out hover:after:w-[100%]  `}
       >
         <Link href={link.address}>{link.name}</Link>
@@ -60,7 +65,21 @@ const NavBar = () => {
           <p className="absolute hidden hover:visible text-white-100">
             {social.name}
           </p>
-          <Image src={social.image} width={25} height={25} alt={social.name} />
+          <motion.div
+            variants={childVariant}
+            whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
+            transition={{ delay: index * 0.2, duration: 0.3 }}
+            initial="hidden"
+            animate="visible"
+            className={"flex space-x-2"}
+          >
+            <Image
+              src={social.image}
+              width={25}
+              height={25}
+              alt={social.name}
+            />
+          </motion.div>
         </motion.a>
       </Link>
     );
@@ -80,22 +99,9 @@ const NavBar = () => {
           <Image width={150} height={30} src={logo} />
         </motion.div>
 
-        <motion.ul
-          variants={LinksVariant}
-          whileInView={{ y: ["30%", "0%"], opacity: [0, 0.5, 1] }}
-          initial="hidden"
-          animate="visible"
-          className={`hidden lmd:flex  items-center space-x-8`}
-        >
-          {links}
-        </motion.ul>
+        <ul className={`hidden lmd:flex  items-center space-x-8`}>{links}</ul>
 
-        <motion.ul
-          variants={containerVariant}
-          initial="hidden"
-          animate="visible"
-          className={"flex space-x-2"}
-        >
+        <motion.ul className={"flex space-x-2"}>
           {socialIcons}
           <div
             onClick={() => {
