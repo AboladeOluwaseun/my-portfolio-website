@@ -39,7 +39,7 @@ const projects = [
     tags: ["React"],
   },
   {
-    title: "Aurhentication App",
+    title: "Authentication App",
     imageUrl: "/assets/screenshot/auth.png",
     project_url: "https://userrauthenticationapp.netlify.app",
     description: "some basi project description",
