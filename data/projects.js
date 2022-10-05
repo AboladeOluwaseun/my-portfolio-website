@@ -76,7 +76,7 @@ export const blogPosts = [
     title: "Objects in JavaScript",
     imageUrl: "/assets/screenshot/0_javascript_logo.jpg",
     project_url:
-      "https://github.com/AboladeOluwaseun/paddle-frontend-assessment-2",
+      "https://oluwaseunabolade.hashnode.dev/javascript-object-a-beginners-guide",
     description: "A beginner-friendly guide to objects in JavaScript",
   },
 ];
