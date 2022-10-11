@@ -98,7 +98,7 @@ const Hero = ({ children }) => {
             </motion.div>
           </div>
 
-          <div data-aos="fade-left" className="flex items-center  mt-6">
+          {/* <div data-aos="fade-left" className="flex items-center  mt-6">
             <motion.div
               transition={{ duration: 4 }}
               variants={childVariant}
@@ -121,7 +121,7 @@ const Hero = ({ children }) => {
                 Projects/ Contributions
               </span>
             </motion.div>
-          </div>
+          </div> */}
 
           <motion.div
             transition={{ duration: 5.5 }}
