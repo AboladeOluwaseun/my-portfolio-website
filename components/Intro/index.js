@@ -41,7 +41,7 @@ export default function Intro() {
                 <p className="lmd:max-w-[40%] text-[1rem]">
                   My name is{" "}
                   <span className="text-yellow"> Abolade Oluwaseun</span>. I'm a
-                  self-taught Front End Developer from Nigeria. I have over{" "}
+                  self-taught Front End Developer from Nigeria. I have{" "}
                   <span className="text-yellow">many years</span> of experience
                   creating scalable and user-friendly websites. I'd describe
                   myself as a passionate developer who enjoys{" "}
