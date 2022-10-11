@@ -1,4 +1,4 @@
-# BaayMax 😎
+<!-- # BaayMax 😎
 
 Generating of portfolio site just got easier. BaayMax a tool for developers which enables generating of `intuitive`, `unique`, `flexible` portfolio site ready for deployment.
 
@@ -23,7 +23,7 @@ Watch brief video about #Baaymax [BaayMax Video](https://youtu.be/X_cHNdnG4Bo)
 
 #### Git
 
-```bash 
+```bash
     node --version
     # v16.4.2
 ```
@@ -156,4 +156,4 @@ This can be done by simply updating some of the `color codes` found in `tailwind
 
 ## Disclaimer 😢
 
-> if you run into an `error` kindly post it within the github issue tab here [Raise Error](https://github.com/Benrobo/baaymax-cli/issues)
+> if you run into an `error` kindly post it within the github issue tab here [Raise Error](https://github.com/Benrobo/baaymax-cli/issues) -->
