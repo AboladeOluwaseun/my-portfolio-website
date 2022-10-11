@@ -42,7 +42,7 @@ export default function Intro() {
                   My name is{" "}
                   <span className="text-yellow"> Abolade Oluwaseun</span>. I'm a
                   self-taught Front End Developer from Nigeria. I have over{" "}
-                  <span className="text-yellow"> 2 years</span> of experience
+                  <span className="text-yellow">many years</span> of experience
                   creating scalable and user-friendly websites. I'd describe
                   myself as a passionate developer who enjoys{" "}
                   <span className="text-yellow">coding</span> ,{" "}
