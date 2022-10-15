@@ -132,7 +132,7 @@ const Hero = ({ children }) => {
               variants={buttonVariant}
               whileHover="hover"
               className=" px-5 py-3 rounded-md bg-yellow scale-[.90] hover:scale-[.95] transition-all  "
-              href="/CV/OluwaseunAboladeResume.pdf"
+              href="/CV/UpdatedResume.pdf"
             >
               View CV
             </motion.a>
