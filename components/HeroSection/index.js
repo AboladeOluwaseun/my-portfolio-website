@@ -22,32 +22,32 @@ const Hero = ({ children }) => {
     setResumeActive(!resumeActive);
   }
   // fetch github repos count
-  async function getReposCount() {
-    let res;
-    if (localStorage.getItem("repo_counts") === null) {
-      res = await fetch(`https://api.github.com/users/${userName}`);
-      let data = await res.json();
+  // async function getReposCount() {
+  //   let res;
+  //   if (localStorage.getItem("repo_counts") === null) {
+  //     res = await fetch(`https://api.github.com/users/${userName}`);
+  //     let data = await res.json();
 
-      if (data && data.public_repos !== undefined) {
-        const { public_repos, avatar_url } = data;
-        localStorage.setItem("repo_counts", JSON.stringify(public_repos));
-        setReposCount(public_repos);
-      }
-    }
-    // get data from cahched localstorage
-    let data = JSON.parse(localStorage.getItem("repo_counts"));
-    let useravatar = JSON.parse(localStorage.getItem("github_avatar"));
+  //     if (data && data.public_repos !== undefined) {
+  //       const { public_repos, avatar_url } = data;
+  //       localStorage.setItem("repo_counts", JSON.stringify(public_repos));
+  //       setReposCount(public_repos);
+  //     }
+  //   }
+  //   // get data from cahched localstorage
+  //   let data = JSON.parse(localStorage.getItem("repo_counts"));
+  //   let useravatar = JSON.parse(localStorage.getItem("github_avatar"));
 
-    setReposCount(data);
+  //   setReposCount(data);
 
-    return data;
-  }
+  //   return data;
+  // }
 
-  useEffect(() => {
-    (async () => {
-      await getReposCount();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     await getReposCount();
+  //   })();
+  // }, []);
 
   return (
     <>

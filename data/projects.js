@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Portfolio website",
     imageUrl: "/assets/screenshot/portfolio.png",
-    project_url: "https://endearing-puppy-4d73e8.netlify.app",
+    project_url: "https://aboladeoluwaseun-portfolio.netlify.app/",
     description: "My portfolio website that decribes who I am and What I do",
     tags: ["React", "Next.js", "Tailwind"],
   },
