@@ -12,6 +12,7 @@ export default function DomHead({ pageName = "Home Page" }) {
         name="description"
         content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set."
       />
+      
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta
@@ -28,7 +29,7 @@ export default function DomHead({ pageName = "Home Page" }) {
       />
       <meta
         property="og:image"
-        content="https://github.com/Benrobo/baaymax-cli/raw/master/readmeImg/cli.png?raw=true"
+        content="public\assets\logo.png"
       />
 
       {/* <!-- Twitter --> */}

@@ -1,5 +1,37 @@
 const projects = [
   {
+    title: "Boldo Landing Page",
+    imageUrl: "/assets/screenshot/demoscreenshot.jpg",
+    project_url: "https://boldo-landing-page-1.vercel.app/",
+    description:
+      "A chatbot that allows users to type something in an input field and displays all of their conversations on the same page.",
+    tags: ["CSS", "javaScript"],
+  },
+  {
+    title: "ChatBot",
+    imageUrl: "/assets/screenshot/roman-synkevych-UT8LMo-wlyk-unsplash.jpg",
+    project_url: "https://chat-bot-1.netlify.app/",
+    description:
+      "A chatbot that allows users to type something in an input field and displays all of their conversations on the same page.",
+    tags: ["CSS", "javaScript"],
+  },
+  {
+    title: "Book Inventory App",
+    imageUrl: "/assets/screenshot/pic4.png",
+    project_url: "https://bookinventoryapp.netlify.app/",
+    description:
+      "An app that enable users too see a list of books available on the Ice and Fire API platform. It also allow users to search for a book using the following name, publisher, isbn, authors, end date, characters name and characters culture.",
+    tags: ["React", "MaterialUI", "TypeScript"],
+  },
+  {
+    title: "Calculator",
+    imageUrl: "/assets/screenshot/roman-synkevych-UT8LMo-wlyk-unsplash.jpg",
+    project_url: "https://expensetrackerrapp.netlify.app",
+    description:
+      "A simple calculator",
+    tags: ["React", "Tailwind", "TypeScript"],
+  },
+  {
     title: "Finance Tracker",
     imageUrl: "/assets/screenshot/finacetracker.png",
     project_url: "https://expensetrackerrapp.netlify.app",
