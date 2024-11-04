@@ -4,16 +4,16 @@ const projects = [
     imageUrl: "/assets/screenshot/romancify.png",
     project_url: "https://romancify.vercel.app/",
     description:
-      "A chatbot that allows users to type something in an input field and displays all of their conversations on the same page.",
-    tags: ["CSS", "javaScript"],
+      "Developed the frontend for Romancify, an AI-powered web app that analyzes conversations for improved communication strategies in relationships.",
+      tags: ["React", "Tailwind", "MaterialUI"],
   },
   {
     title: "Fiverock",
     imageUrl: "/assets/screenshot/fiverock.png",
     project_url: "https://fiverock-azure.vercel.app/",
     description:
-      "A chatbot that allows users to type something in an input field and displays all of their conversations on the same page.",
-    tags: ["React", "Next.js", "Tailwind", "MaterialUI"],
+      "Developed and maintained the frontend of an admin app for a DTC operations and management platform, enabling partners to manage brands, advertisements, and insights more effectively.",
+    tags: ["React", "Tailwind", "MaterialUI"],
   },
   {
     title: "Finance Tracker",

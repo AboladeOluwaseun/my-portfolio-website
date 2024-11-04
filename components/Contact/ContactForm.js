@@ -7,6 +7,7 @@ const ContactForm = () => {
     send: false,
     success: undefined,
   });
+  const [error, setError] = useState("");
 
   const contactForm = useRef(null);
 
@@ -28,6 +29,7 @@ const ContactForm = () => {
       )
       .then(
         (res) => {
+          console.log(res);
           setIsSubmitted((prev) => {
             return {
               ...prev,
