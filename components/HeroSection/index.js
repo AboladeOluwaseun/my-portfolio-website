@@ -149,13 +149,13 @@ const Hero = ({ children }) => {
           }}
           initial="hidden"
           animate="visible"
-          className=" "
+          className=" rounded-fu "
         >
           <Image
-            width={400}
-            height={400}
-            className=" mb-4 w-full h-full"
-            src="/images/avatar/profile.png"
+            width={300}
+            height={300}
+            className=" mb-4 w rounded-full h-ful"
+            src="/images/avatar/my avatar.jpg"
           />
         </motion.div>
       </div>

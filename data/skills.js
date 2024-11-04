@@ -8,7 +8,7 @@ const skills = [
   {
     name: "Writing",
     description:
-      "Writing about web development topics that I am knowledgeable about. It's my teeny-tiny contribution to the community.",
+      "Writing about web development topics that I am knowledgeable about. It's my way of giving back and contributing to the community.",
     projects_completed: "2",
   },
 ];

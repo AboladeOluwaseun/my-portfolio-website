@@ -39,19 +39,23 @@ export default function Intro() {
 
               <div className="mt-8 lmd:flex justify-between items-start ">
                 <p className="lmd:max-w-[40%] text-[1rem]">
-                  My name is{" "}
-                  <span className="text-yellow"> Abolade Oluwaseun</span>. I'm a
-                  self-taught Front End Developer from Nigeria. I have{" "}
-                  <span className="text-yellow">many years</span> of experience
-                  creating scalable and user-friendly websites. I'd describe
-                  myself as a passionate developer who enjoys{" "}
-                  <span className="text-yellow">coding</span> ,{" "}
-                  <span className="text-yellow">open source</span>, and the web
-                  platform. Aside from my job, I enjoy creating and contributing
-                  to open source projects. That allows me to learn a lot of new
-                  things, grow as a developer, and contribute to other open
-                  source projects. <br /> I also enjoy writing on web
-                  development-related topics on my blog.
+                  My name is <span className="text-yellow"> Oluwaseun</span>.{" "}
+                  <br />I help startups and companies achieve
+                  <span className=" text-yellow">
+                    {" "}
+                    seamless, high-performance{" "}
+                  </span>
+                  frontend solutions that bring their visions to life. My
+                  approach combines technical skill with an eye for design, from
+                  <span className=" text-yellow">
+                    {" "}
+                    building interactive applications
+                  </span>{" "}
+                  to <span className=" text-yellow">
+                    integrating databases
+                  </span>{" "}
+                  for real-time data management. <br /> I also enjoy writing on
+                  web development-related topics on my blog.
                 </p>
                 <div className="mt-10 flex items-center justify-start  flex-wrap lmd:mt-0 lmd:max-w-[40%] ">
                   <Techs />
